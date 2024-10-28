@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-underline{
+    @apply relative inline-flex items-center;
+}
+.hover-underline::after{
+    @apply absolute left-0 bottom-0 block h-0.5 bg-current transition-all duration-300;
+    content: '';
+    width: 0;
+}
+.hover-underline::after{
+    width: 100;
+}
+
+.btn{
+    @apply .bg-sky-200 hover: bg-sky-950 transition duration-300 text-black font-bold py-2
+}
+
+.html{
+    scroll-behavior: smooth;
+}
